@@ -141,6 +141,14 @@ RUN install2.r --error --deps TRUE bookdown
 # Install data.table
 RUN install2.r --error --deps TRUE data.table
 
+# Install Miscellaneous R packages
+RUN Rscript -e 'remotes::install_version("highcharter", "0.7.0")'
+RUN install2.r --error microbenchmark
+RUN install2.r --error nycflights13
+
+# Install jhaddins
+RUN Rscript -e 'remotes::install_git("https://gitlab.com/jozefhajnala/jhaddins")'
+
 # Cleanup
 RUN apt-get clean \
   && apt-get autoremove \
