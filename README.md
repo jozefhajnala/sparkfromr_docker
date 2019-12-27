@@ -48,7 +48,7 @@ Rscript -e "bookdown::render_book('.')"
 
 ```
 docker run --rm -it jozefhajnala/sparkfromr:latest R
-rmarkdown::render("/root/.local/r202-spark-r-dplyr-verbs.R")
+rmarkdown::render("/root/.local/spark_script.R")
 ```
 
 ### Interactive with R and sparklyr
