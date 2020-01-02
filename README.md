@@ -1,10 +1,8 @@
 # Docker image `sparkfromr` 
 
-Based on images by the [Rocker Project](https://www.rocker-project.org/).
-Used for building the sparkfromr bookdown website.
+![](https://github.com/jozefhajnala/sparkfromr_docker/workflows/Docker%20Image%20CI/badge.svg)
 
-Has RStudio exposed at [http://localhost:8787](http://localhost:8787).
-Also has data.table, knitr, rmarkdown and bookdown packages.
+Based on images by the [Rocker Project](https://www.rocker-project.org/). Used for building the [sparkfromr.com](https://sparkfromr.com) bookdown website. Has RStudio exposed at [http://localhost:8787](http://localhost:8787).
 
 ## Main features
 
